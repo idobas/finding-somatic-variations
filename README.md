@@ -43,9 +43,9 @@ other than 0/0, and also have 99/99 in the GQ. The filtering script is called fi
 ### Final Filtering Script
 - Written in python.
 - Input a vcf file.
-- Output a txt file that contain the following:
-  - Variants filter by GT and GQ arrange by the number of brains we found the current variant.
-  - The total number of variant. 
-  - Number of variant found in each brain.
-  - A list of all the variant found in each chromosome (arrange by chromosomes names).
-  - A "bucket-list" that conatin the number of variants found in each bucket (size of one bucket 1 million Nucleic acids).
+- Output a txt file that contains the following:
+  - Variants filter by GT and GQ arranged by the number of brain samples we found in the current variant.
+  - The total number of variants. 
+  - Number of variants found in each brain sample.
+  - A list of all of the variants found in each chromosome (arranged by chromosomes names).
+  - A "bucket-list" that conatins the number of variants found in each bucket (size of one bucket 1 million Nucleic acids).
