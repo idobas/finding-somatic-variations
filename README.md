@@ -20,7 +20,7 @@ This repository contains scripts usable for doing the entire variant finding pro
 
 ## How to run
 
-Variant calling stage: you first need to put the path to all of your bam files in the runVarCalling script. Once this is set up
+Variant calling stage: You first need to put the path to all of your bam files in the runVarCalling script. Once this is set up
 you can run it and wait for the results to return (could take some time). Note that some paths need to be altered from the existing 
 scripts in order for them to work with your directories. Next, you will need to run the combineVar script, and then the genotypeGVCFS script,
 to get the raw variants file.
@@ -30,4 +30,4 @@ recalibration. Activate these at the following order: snpRecalibrationModel.sh, 
 Finally you will get a recal.variants.vcf file.
 
 Final filtering: That stage is our addition relevant only to this project - it filters the variants to leave only the ones that have GT of 0/0 and 
-other than 0/0, and also have 99/99 in the GQ.
+other than 0/0, and also have 99/99 in the GQ. The filtering script is called filteringByGTnGQ.py.
