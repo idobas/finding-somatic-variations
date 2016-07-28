@@ -41,11 +41,11 @@ Final filtering: That stage is our addition relevant only to this project - it f
 other than 0/0, and also have 99/99 in the GQ. The filtering script is called filteringByGTnGQ.py.
 
 ### Final Filtering Script
-- Written in python
-- Input a vcf file
+- Written in python.
+- Input a vcf file.
 - Output a txt file that contain the following:
-  - Variants filter by GT and GQ arrange by the number of brains we found the current variant
-  - The total number of variant 
-  - number of variant we found in each brain
-  - a list of all the variant we found in each chromosomes (arrange by chromosomes names)
-  - a "bucket-list" that conatin the number of variant we found in each bucket (size of one bucket 1 million Nucleic acids)
+  - Variants filter by GT and GQ arrange by the number of brains we found the current variant.
+  - The total number of variant. 
+  - Number of variant found in each brain.
+  - A list of all the variant found in each chromosome (arrange by chromosomes names).
+  - A "bucket-list" that conatin the number of variants found in each bucket (size of one bucket 1 million Nucleic acids).
