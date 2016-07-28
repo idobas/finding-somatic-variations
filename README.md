@@ -1,17 +1,7 @@
 ## finding-somatic-variations
 This repository contains scripts usable for doing the entire variant finding process with GATK.
 
-### Final Filtering Script
-- Written in python
-- Input a vcf file
-- Output a txt file that contain the following:
-  - Variants filter by GT and GQ arrange by the number of brains we found the current variant
-  - The total number of variant 
-  - number of variant we found in each brain
-  - a list of all the variant we found in each chromosomes (arrange by chromosomes names)
-  - a "bucket-list" that conatin the number of variant we found in each bucket (size of one bucket 1 million Nucleic acids)
-
-## Requirements
+### Requirements
 
 1) You need to have the GATK jar file (https://software.broadinstitute.org/gatk/download/)
 
@@ -36,7 +26,7 @@ This repository contains scripts usable for doing the entire variant finding pro
 3) You need to have a user in orchestra harvard cluster system.
 
 
-## How to run
+### How to run
 
 Variant calling stage: You first need to put the path to all of your bam files in the runVarCalling script. Once this is set up
 you can run it and wait for the results to return (could take some time). Note that some paths need to be altered from the existing 
@@ -49,3 +39,13 @@ Finally you will get a recal.variants.vcf file.
 
 Final filtering: That stage is our addition relevant only to this project - it filters the variants to leave only the ones that have GT of 0/0 and 
 other than 0/0, and also have 99/99 in the GQ. The filtering script is called filteringByGTnGQ.py.
+
+### Final Filtering Script
+- Written in python
+- Input a vcf file
+- Output a txt file that contain the following:
+  - Variants filter by GT and GQ arrange by the number of brains we found the current variant
+  - The total number of variant 
+  - number of variant we found in each brain
+  - a list of all the variant we found in each chromosomes (arrange by chromosomes names)
+  - a "bucket-list" that conatin the number of variant we found in each bucket (size of one bucket 1 million Nucleic acids)
