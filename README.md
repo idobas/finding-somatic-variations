@@ -1,6 +1,16 @@
 ## finding-somatic-variations
 This repository contains scripts usable for doing the entire variant finding process with GATK.
 
+### Final Filtering Script
+- Written in python
+- Input a vcf file
+- Output a txt file that contain the following:
+  - Variants filter by GT and GQ arrange by the number of brains we found the current variant
+  - The total number of variant 
+  - number of variant we found in each brain
+  - a list of all the variant we found in each chromosomes (arrange by chromosomes names)
+  - a "bucket-list" that conatin the number of variant we found in each bucket (size of one bucket 1 million Nucleic acids)
+
 ## Requirements
 
 1) You need to have the GATK jar file (https://software.broadinstitute.org/gatk/download/)
